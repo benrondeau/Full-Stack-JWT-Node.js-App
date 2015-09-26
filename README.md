@@ -8,6 +8,6 @@ Front and back-end app on Node.js using JWT for authentication. Back-end uses Ex
 ### Get Started
 - Download Repo
 - cd into project directory and `npm install`
-- `node server.js`
+- `npm start`
 - Open [http://localhost:3000](http://localhost:3000) and use credentials `user` and `password` to login
 - Open web console to see JWT issued

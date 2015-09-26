@@ -4,15 +4,18 @@
   "description": "This is a complete JWT app with front/back end. Builds on the basic JWT/Node.js backend app.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js & npm run transpile",
+    "transpile": "babel ./server-es6.js --out-file ./server.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel": "^5.8.23",
     "body-parser": "^1.14.0",
     "express": "^4.13.3",
     "jsonwebtoken": "^5.0.5",
-    "morgan": "^1.6.1"
+    "morgan": "^1.6.1",
+    "nodemon": "^1.7.1"
   }
 }

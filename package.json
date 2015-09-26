@@ -4,8 +4,9 @@
   "description": "This is a complete JWT app with front/back end. Builds on the basic JWT/Node.js backend app.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "babel": "babel ./server.es6 --out-file ./server.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",

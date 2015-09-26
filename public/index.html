@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Basic JWT App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="//bootswatch.com/superhero/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body ng-app="JWTapp">
+	
+	<!-- Navbar -->
+	<nav class="navbar navbar-default" ng-controller="NavbarController">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand pointer" ng-click="home()">JWT App</a>
+	    </div>
+	    <div>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="pointer"><a ng-click="logout()">Logout</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div ng-view>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

@@ -11,3 +11,4 @@ Front and back-end app on Node.js using JWT for authentication. Back-end uses Ex
 - `node server.js`
 - Open [http://localhost:3000](http://localhost:3000) and use credentials `user` and `password` to login
 - Open web console to see JWT issued
+- Click 'Logout' button in navbar to delete token
